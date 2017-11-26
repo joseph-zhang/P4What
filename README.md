@@ -11,10 +11,11 @@
 * Coursera :: [Machine Learning](https://www.coursera.org/learn/machine-learning#syllabus) [Andrew Ng]
 * [CS229](http://cs229.stanford.edu/) : Machine Learning [Andrew Ng/Dan Boneh]
 ---
-#### Data Analysis
-* Python for Data Analysis [Wes McKinney]
----
 #### Computer Vision
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
 * Computer Vision - Models, Learning, and Inference [Simon J.D. Prince]
+---
+#### Data Analysis
+* Python for Data Analysis [Wes McKinney]
+
 **注**：许多 py 上的项目已经声明将逐渐迁移至 Python3, 所以 repo 的代码也会尽量向这个方向靠拢。
