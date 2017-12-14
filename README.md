@@ -14,6 +14,7 @@
 #### Computer Vision
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
 * Computer Vision - Models, Learning, and Inference [Simon J.D. Prince]
+* Computer Vision - Algorithms and Applications [Richard Szeliski]
 ---
 #### Data Analysis
 * Python for Data Analysis [Wes McKinney]
