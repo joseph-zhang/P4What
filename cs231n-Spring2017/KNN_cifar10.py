@@ -1,3 +1,5 @@
+#!usr/bin/env python
+#!coding:utf-8
 # here is the main procedure to manipulate cifar10
 # classification with KNN method
 from cs231n.csuti.cifarload import load_CIFAR10
@@ -8,10 +10,10 @@ cifar_path = '../dataset/cifar-10-batches-py/'
 
 # load cifar10 data
 Xtr, Ytr, Xte, Yte = load_CIFAR10(cifar_path)
-print 'Training data Xtr: ', Xtr.shape
-print 'Training labels Ytr: ', Ytr.shape
-print 'Test data Xte: ', Xte.shape
-print 'Test labels Yte: ', Yte.shape
+print ('Training data Xtr: ', Xtr.shape)
+print ('Training labels Ytr: ', Ytr.shape)
+print ('Test data Xte: ', Xte.shape)
+print ('Test labels Yte: ', Yte.shape)
 
 # flatten out all images to be one-dimensional
 Xtr_rows = Xtr.reshape(Xtr.shape[0], 32*32*3)
@@ -50,14 +52,13 @@ for i in range(num_folds):
 
     # check accuracy for every k choice
     for k in ks:
-        print 'predicting: fold-%d, k=%d...' %(i,k)
+        print ('predicting: fold-%d, k=%d...' %(i,k))
         y_pred = knn.predict(curr_Xvali, k = k)
         accuracy = np.mean(y_pred == curr_Yvali)
         
         if i == 0:
             acc_rate[k] = []
         acc_rate[k].append(accuracy)
-        print 'fold = %d, k = %d, acc = %f' %(i, k, accuracy)
-
+        print ('fold = %d, k = %d, acc = %f' %(i, k, accuracy))
 
 
