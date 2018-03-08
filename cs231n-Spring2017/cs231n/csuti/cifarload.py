@@ -4,16 +4,20 @@
 
 import sys, os
 import numpy as np
-import cPickle as pickle
 import matplotlib.pyplot as plt
 from scipy.misc import imread
 from collections import Counter
+
+try:
+    import cPickle as pickle
+except:
+    import pickle
 
 def load_CIFAR_batch(batch_path):
 #the function to load one of six batches
     # open the python form data batch file
     with open(batch_path,'rb') as fo:
-        thedict = pickle.load(fo) # transfer it to python data structure
+        thedict = pickle.load(fo,encoding='latin1') # transfer it to python data structure
     images = thedict['data']; # get image data as numpy array (1000,3072)
     labels = thedict['labels']; # get lables as python list which range in [0,9]
 
@@ -37,4 +41,3 @@ def load_CIFAR10(root_path):
     # and deal with test batch
     Xte, Yte = load_CIFAR_batch(os.path.join(root_path,'test_batch'));
     return Xtr,Ytr,Xte,Yte
-
