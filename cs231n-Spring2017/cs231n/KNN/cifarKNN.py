@@ -29,7 +29,7 @@ class KNNer(object):
         distance = np.sqrt((-2 * np.dot(X, self.X_tr.T)) + np.sum(X**2, axis=1, keepdims=True) + np.sum(self.X_tr**2, axis=1))
 
         y_pred = np.zeros(num_test)
-        for i in xrange(num_test):
+        for i in range(num_test):
             closest_y = []
             # positions of first k min distance, then their labels
             closest_y = self.y_tr[np.argsort(distance[i, :])[:k]] # usage of np.argsort
