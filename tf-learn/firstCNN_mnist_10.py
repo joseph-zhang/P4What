@@ -58,11 +58,11 @@ h_pool2 = max_pool(h_conv2) # 7x7x64
 W_fc1 = weight_var([7 * 7 * 64, 1024])
 b_fc1 = bias_var([1024])
 h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
-h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)  # ->  1x1024
+h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1) # ->  1x1024
 h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 
 # output, also full-connection
-W_fec2 = weight_var([1024, 10]) # 1x10
+W_fec2 = weight_var([1024, 10]) 
 b_fc2 = bias_var([10])
 pred = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fec2) + b_fc2) # -> 1x10
 
@@ -81,7 +81,7 @@ init = tf.global_variables_initializer()
 
 with tf.Session() as sess:
     sess.run(init)
-    for it in range(2000):
+    for it in range(1000):
         x_tr, y_tr = mnist.train.next_batch(50)
         sess.run(train, feed_dict = {x_in : x_tr, y_in: y_tr, keep_prob: 0.5})
         if it % 100 == 0:
@@ -91,8 +91,11 @@ with tf.Session() as sess:
                                                      keep_prob: 1.0})
             print('iter-', it, 'the training accuracy is ',acc_tr)
             # here, notice your graphic card's memory when calculate the acc
-            acc_te =  sess.run(accuracy, feed_dict = {x_in: mnist.test.images[:2000],\
-                                                      y_in: mnist.test.labels[:2000],\
-                                                      keep_prob: 1.0})
-            print('iter-', it, 'the test accuracy is ',acc_te)
-
+            acc_vali =  sess.run(accuracy, feed_dict = {x_in: mnist.validation.images[:2000],\
+                                                        y_in: mnist.validation.labels[:2000],\
+                                                        keep_prob: 1.0})
+            print('iter-', it, 'the validation accuracy is ',acc_vali)
+    acc_te =  sess.run(accuracy, feed_dict = {x_in: mnist.test.images[:2000],\
+                                              y_in: mnist.test.labels[:2000],\
+                                              keep_prob: 1.0})
+    print('\n the result test accuracy is ', acc_te)
