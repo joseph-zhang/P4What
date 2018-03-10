@@ -58,13 +58,13 @@ h_pool2 = max_pool(h_conv2) # 7x7x64
 W_fc1 = weight_var([7 * 7 * 64, 1024])
 b_fc1 = bias_var([1024])
 h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
-h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1) # 1x1024
+h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)  # ->  1x1024
 h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 
-# output
-W_fec2 = weight_var([1024, 10])
+# output, also full-connection
+W_fec2 = weight_var([1024, 10]) # 1x10
 b_fc2 = bias_var([10])
-pred = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fec2) + b_fc2)
+pred = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fec2) + b_fc2) # -> 1x10
 
 # cross-entropy loss
 loss = tf.reduce_mean(-tf.reduce_sum(y_in * tf.log(pred), reduction_indices = [1]))
