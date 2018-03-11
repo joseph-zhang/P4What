@@ -23,7 +23,7 @@ def weight_var(shape):
 # function to set bias
 # note that the bias should be initialized as small positive number(? => Relu)
 def bias_var(shape):
-    initial = tf.constant(0,1, shape = shape)
+    initial = tf.constant(0.1, shape = shape)
     return tf.Variable(initial)
 
 # convolutional op
