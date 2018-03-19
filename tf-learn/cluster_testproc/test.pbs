@@ -1,0 +1,12 @@
+#PBS -N <task-name>
+#PBS -o <path-to-save-stdout>
+#PBS -e <path-to-save-stderr>
+#PBS -l nodes=1:gpus=1:S
+#PBS -r y
+cd $PBS_O_WORKDIR
+echo Time is `date`
+echo Directory is $PWD
+echo This job runs on following nodes:
+cat $PBS_NODEFILE
+cat $PBS_GPUFILE
+startdocker -D <datapath> -P <procpath> -s "<command-or-shell>" <image-name>
