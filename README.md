@@ -1,7 +1,6 @@
 # Primer-MLDLDA
 **A beginner of Machine Learning, Deep Learning and Data Analysis.**<br>
 
-## Contents：进行记录表
 #### Machine Learning and Deep Learning
 * Coursera :: [Machine Learning](https://www.coursera.org/learn/machine-learning#syllabus) [Andrew Ng]
 * [CS229](http://cs229.stanford.edu/) : Machine Learning [Andrew Ng/Dan Boneh]
