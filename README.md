@@ -17,5 +17,3 @@
 ---
 #### Data Analysis
 * Python for Data Analysis [Wes McKinney]
-
-**注**：许多 py 上的项目已经声明将逐渐迁移至 Python3, 所以 repo 的代码也会尽量向这个方向靠拢。
