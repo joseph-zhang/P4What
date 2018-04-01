@@ -1,5 +1,5 @@
 # Primer-MLDLDA
-**A beginner of Machine Learning, Deep Learning and Data Analysis.**<br>
+**A data related repository, about methods to learn from data.**<br>
 
 #### Machine Learning and Deep Learning
 * Coursera :: [Machine Learning](https://www.coursera.org/learn/machine-learning#syllabus) [Andrew Ng]
