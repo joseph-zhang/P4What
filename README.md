@@ -1,4 +1,4 @@
-# Primer-MLDLDA
+# Primer-Alchemy
 **A data related repository, about methods to learn from data.**<br>
 
 #### Machine Learning and Deep Learning
