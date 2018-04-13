@@ -1,4 +1,4 @@
-#!usr/local/env python
+#!usr/bin/env python
 #coding=utf-8
 # since the simple multiprocessing usage has been shown
 # here is an example of 'subprocess' to control a outer process
