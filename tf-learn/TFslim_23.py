@@ -36,7 +36,7 @@ def alex_net(inputs,
             pool1 = slim.max_pool2d(conv1, [3, 3], 2, scope = 'pool1')
             conv2 = slim.conv2d(pool1, 256, [5, 5], scope = 'conv2')
             pool2 = slim.max_pool2d(conv2, [3, 3], 2, scope = 'pool2')
-            conv3 = slim.conv2d(conv2, 384, [3, 3], scope = 'conv3')
+            conv3 = slim.conv2d(pool2, 384, [3, 3], scope = 'conv3')
             conv4 = slim.conv2d(conv3, 384, [3, 3], scope = 'conv4')
             conv5 = slim.conv2d(conv4, 256, [3, 3], scope = 'conv5')
             pool5 = slim.max_pool2d(conv5, [3, 3], 2, scope = 'pool5')
