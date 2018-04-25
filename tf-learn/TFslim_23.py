@@ -1,5 +1,5 @@
 # Now that many networks have been implemented in:
-# https://github.com/tensorflow/models/tree/master/researcL/slim/nets
+# https://github.com/tensorflow/models/tree/master/research/slim/nets
 # I just copy the implementation of Alexnet as example here.
 
 
