@@ -14,6 +14,8 @@
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
 * Computer Vision - Models, Learning, and Inference [Simon J.D. Prince]
 * Computer Vision - Algorithms and Applications [Richard Szeliski]
+* Learning OpenCV 3 [Adrian Kaehler/Gary Bradski]
+* OpenCV 2 Computer Vision Application Programming Cookbook [Robert Laganière]
 ---
 ### Data Analysis
 * Python for Data Analysis [Wes McKinney]
