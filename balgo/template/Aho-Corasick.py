@@ -13,7 +13,7 @@
 # In fact, The implementation in python is explicit,
 # Python is a language without pointer, and we need not to manage memory by hand.
 
-# The idea of AC automata can be splited as three stpes:
+# The idea of AC automata can be splited as three steps:
 # 1). Read patterns to construct trie (succ paths);
 # 2). Use BFS to construct failure paths (failure function);
 # 3). go along with succ/failure paths to search multiple patterns in a given text.
