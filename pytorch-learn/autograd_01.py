@@ -3,6 +3,8 @@ import torchvision
 from torch.autograd import Variable
 
 # create a variable
+# Actually, Variable has been diprecated in 0.4
+# it has been binded to tensor naturally
 x = Variable(torch.ones(2, 2), requires_grad = True)
 
 print("original gridient of x: ")
