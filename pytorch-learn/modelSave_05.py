@@ -75,3 +75,9 @@ model.load_state_dict(checkpoint['model_state_dict'])
 optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 epoch = checkpoint['epoch']
 loss = checkpoint['loss']
+
+# invoke eval() to set dropout and batch normalization layers to evaluation mode before running inference.
+model.eval()
+# - or -
+# invoke train() to set these layers to training mode.
+model.train()
