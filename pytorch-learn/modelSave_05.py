@@ -38,11 +38,11 @@ optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 
 # ------------------------------------------- save/load stateDict (learning params) ------------------------------
 # save
-torch.save(model.state_dict(), './statedict')
+torch.save(model.state_dict(), './statedict.pth')
 
 # load
 new_model = Net()
-model.load_state_dict(torch.load('./statedict'))
+model.load_state_dict(torch.load('./statedict.pth'))
 # remember invoke this to set dropout and batch normalization layers to evaluation mode before running inference.
 model.eval()
 
@@ -50,10 +50,10 @@ model.eval()
 # this method is not recommended to use
 
 # save
-torch.save(model, './entire_model')
+torch.save(model, './entire_model.pth')
 
 # load
-new_model = torch.load('./entire_model')
+new_model = torch.load('./entire_model.pth')
 model.eval()
 
 # ------------------------------------------- save/load checkpoint -----------------------------------------------
@@ -64,13 +64,13 @@ torch.save({
     'epoch': epoch,
     'model_state_dict': model.state_dict(),
     'optimizer_state_dict': optimizer.state_dict(),
-    'loss': loss}, PATH)
+    'loss': loss}, './checkpoint.pth.tar')
 
 # load checkpoint
 model = TheModelClass(*args, **kwargs)
 optimizer = TheOptimizerClass(*args, **kwargs)
 
-checkpoint = torch.load(PATH)
+checkpoint = torch.load('./checkpoint.pth.tar')
 model.load_state_dict(checkpoint['model_state_dict'])
 optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 epoch = checkpoint['epoch']
