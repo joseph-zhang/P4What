@@ -84,9 +84,12 @@ loss_func = torch.nn.CrossEntropyLoss()
 
 for epoch in range(10):
     print('epoch {}'.format(epoch + 1))
+
     # training
+    model.train()
     train_loss = 0.
     train_acc = 0.
+
     for batch_x, batch_y in train_loader:
         batch_x, batch_y = batch_x.to(device), batch_y.to(device)
         out = model(batch_x)
