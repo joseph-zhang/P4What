@@ -9,6 +9,7 @@
 * Deep Learning:Adaptive Computation and Machine Learning series [Ian Goodfellow/Yoshua Bengio/Aaron Courville]
 * Neural Networks and Deep Learning [Michael Nielsen]
 * Pattern Recognition and Machine Learning [Christopher Bishop]
+* Python for Data Analysis [Wes McKinney]
 ---
 ### Computer Vision
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
@@ -22,7 +23,8 @@
 * Real-time rendering [Tomas Akenine-Moller/Eric Haines]
 * Ray Tracing in One Weekend [Peter Shirley]
 * Computer Graphics with OpenGL [Donald D. Hearn/M. Pauline Baker]
-* [CS1230](http://cs.brown.edu/courses/cs123/lectures.shtml) : Introduction To Computer Graphics
+* [Brown-CS1230](http://cs.brown.edu/courses/cs123/lectures.shtml) : Introduction To Computer Graphics
 ---
-### Data Analysis
-* Python for Data Analysis [Wes McKinney]
+### Parallel Programming
+* CUDA by Example [Jason Sanders/Edward Kandrot]
+* Is Parallel Programming Hard, And, If So, What Can You Do About It? [Paul E. McKenney]
