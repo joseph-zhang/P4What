@@ -10,6 +10,7 @@
 * Neural Networks and Deep Learning [Michael Nielsen]
 * Pattern Recognition and Machine Learning [Christopher Bishop]
 * Python for Data Analysis [Wes McKinney]
+* Machine Learning Foundations [Hsuan-Tien Lin]
 ---
 ### Computer Vision
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
