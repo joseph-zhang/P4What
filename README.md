@@ -3,10 +3,10 @@
 
 ### Machine Learning and Deep Learning
 * Coursera :: [Machine Learning](https://www.coursera.org/learn/machine-learning#syllabus) [Andrew Ng]
-* [CS229](http://cs229.stanford.edu/) : Machine Learning [Andrew Ng/Dan Boneh]
-* [CS231n](http://vision.stanford.edu/teaching/cs231n/2017/syllabus.html) : Convolutional Neural Networks for Visual Recognition
+* [Stanford-CS229](http://cs229.stanford.edu/) : Machine Learning [Andrew Ng/Dan Boneh]
+* [Stanford-CS231n](http://vision.stanford.edu/teaching/cs231n/2017/syllabus.html) : Convolutional Neural Networks for Visual Recognition
 * Machine Learning in Action [Peter Harrington]
-* Deep Learning:Adaptive Computation and Machine Learning series [Ian Goodfellow/Yoshua Bengio/Aaron Courville]
+* Deep Learning: Adaptive Computation and Machine Learning series [Ian Goodfellow/Yoshua Bengio/Aaron Courville]
 * Neural Networks and Deep Learning [Michael Nielsen]
 * Pattern Recognition and Machine Learning [Christopher Bishop]
 * Python for Data Analysis [Wes McKinney]
@@ -18,6 +18,7 @@
 * Computer Vision - Algorithms and Applications [Richard Szeliski]
 * Learning OpenCV 3 [Adrian Kaehler/Gary Bradski]
 * OpenCV 2 Computer Vision Application Programming Cookbook [Robert Laganière]
+* [Washington-CSE/EE576](https://courses.cs.washington.edu/courses/cse576/18sp/) : Computer Vision
 ---
 ### Computer Graphics
 * Fundamentals of Computer Graphics [Peter Shirley/Michael Ashikhmin/Steve Marschner]
