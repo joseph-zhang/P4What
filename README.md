@@ -11,6 +11,8 @@
 * Pattern Recognition and Machine Learning [Christopher Bishop]
 * Python for Data Analysis [Wes McKinney]
 * Machine Learning Foundations [Hsuan-Tien Lin]
+* [CMU-36-700](http://www.stat.cmu.edu/~larry/=stat700/) : Probability and Statistics [Larry Wasserman]
+* [CMU-36-705](http://www.stat.cmu.edu/~larry/=stat705/) : Intermediate Statistics [Larry Wasserman]
 ---
 ### Computer Vision
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
