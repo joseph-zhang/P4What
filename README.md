@@ -4,7 +4,6 @@
 ### Machine Learning and Deep Learning
 * Coursera :: [Machine Learning](https://www.coursera.org/learn/machine-learning#syllabus) [Andrew Ng]
 * [Stanford-CS229](http://cs229.stanford.edu/) : Machine Learning [Andrew Ng/Dan Boneh]
-* [Stanford-CS231n](http://vision.stanford.edu/teaching/cs231n/2017/syllabus.html) : Convolutional Neural Networks for Visual Recognition
 * [MIT-15-097](https://users.cs.duke.edu/~cynthia/teaching.html) : Prediction: Machine Learning and Statistics [Cynthia Rudin]
 * Machine Learning in Action [Peter Harrington]
 * Deep Learning: Adaptive Computation and Machine Learning series [Ian Goodfellow/Yoshua Bengio/Aaron Courville]
@@ -20,6 +19,7 @@
 * Computer Vision - Models, Learning, and Inference [Simon J.D. Prince]
 * Computer Vision - Algorithms and Applications [Richard Szeliski]
 * Learning OpenCV 3 [Adrian Kaehler/Gary Bradski]
+* [Stanford-CS231n](http://vision.stanford.edu/teaching/cs231n/2017/syllabus.html) : Convolutional Neural Networks for Visual Recognition [Fei-Fei Li]
 * OpenCV 2 Computer Vision Application Programming Cookbook [Robert Laganière]
 * [Washington-CSE/EE576](https://courses.cs.washington.edu/courses/cse576/18sp/) : Computer Vision
 ---
