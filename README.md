@@ -5,6 +5,7 @@
 * Coursera :: [Machine Learning](https://www.coursera.org/learn/machine-learning#syllabus) [Andrew Ng]
 * [Stanford-CS229](http://cs229.stanford.edu/) : Machine Learning [Andrew Ng/Dan Boneh]
 * [Stanford-CS231n](http://vision.stanford.edu/teaching/cs231n/2017/syllabus.html) : Convolutional Neural Networks for Visual Recognition
+* [MIT-15-097](https://users.cs.duke.edu/~cynthia/teaching.html) : Prediction: Machine Learning and Statistics [Cynthia Rudin]
 * Machine Learning in Action [Peter Harrington]
 * Deep Learning: Adaptive Computation and Machine Learning series [Ian Goodfellow/Yoshua Bengio/Aaron Courville]
 * Neural Networks and Deep Learning [Michael Nielsen]
