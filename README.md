@@ -13,6 +13,7 @@
 * Machine Learning Foundations [Hsuan-Tien Lin]
 * [CMU-36-700](http://www.stat.cmu.edu/~larry/=stat700/) : Probability and Statistics [Larry Wasserman]
 * [CMU-36-705](http://www.stat.cmu.edu/~larry/=stat705/) : Intermediate Statistics [Larry Wasserman]
+* [Stanford-EE103](https://web.stanford.edu/class/ee103/) : Introduction to Matrix Methods [Stephen P. Boyd]
 ---
 ### Computer Vision
 * Computer Vision - A Modern Approach [David A. Forsyth/Jean Ponce]
