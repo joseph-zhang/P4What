@@ -11,8 +11,8 @@ import numpy as np
 class PR(object):
     def __init__(self, W):
         """
-        The parameter W is weight matrix of the given graph
-        W[i][j] is the weight of edge from node i to node j
+        The parameter W is the transition matrix of the given graph
+        W[i][j] is the probability of edge from node i to node j
         """
         self.W = W
         self.N = W.shape[1]
@@ -30,7 +30,7 @@ class PR(object):
         N = self.N
 
         # initialize rank list
-        r = np.random.rand(N)
+        r = np.ones(N) / N
         # iteration counter
         t = 0
 
@@ -51,18 +51,21 @@ class PR(object):
                 t = t + 1
         return r
 
-# Test algorithm
-if __name__ == "__main__":
+# --------------------------------- Test algorithm ---------------------------------
+# Showing the first example in this website:
+# http://pi.math.cornell.edu/~mec/Winter2009/RalucaRemus/Lecture3/lecture3.html
+if __name__  == "__main__":
     # test weight matrix
     W = np.array([
-        [1., 1., 0.],
-        [1., 0., 1.],
-        [0., 0., 1.]
+        [0.0,  1./3, 1./3, 1./3],
+        [0.0,   0.0, 1./2, 1./2],
+        [1.0,   0.0,  0.0,  0.0],
+        [1./2,  0.0, 1./2,  0.0]
     ])
 
     # do pagerank
     pagerank = PR(W)
-    r = pagerank.getRank(info=True)
+    r = pagerank.getRank(d=1, info=True)
 
     # result rank list of N nodes on graph
     print("Rank of nodes: {}".format(r))
