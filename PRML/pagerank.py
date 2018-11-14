@@ -11,7 +11,7 @@ import numpy as np
 class PR(object):
     def __init__(self, W):
         """
-        The parameter W is the transition matrix of the given graph
+        The parameter W is the probability matrix of the given graph
         W[i][j] is the probability of edge from node i to node j
         """
         self.W = W
