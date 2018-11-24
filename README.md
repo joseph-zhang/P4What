@@ -35,3 +35,4 @@
 * CUDA by Example [Jason Sanders/Edward Kandrot]
 * CUDA C programming guide [NVIDIA]
 * Is Parallel Programming Hard, And, If So, What Can You Do About It? [Paul E. McKenney]
+* [Caltech-CS179](http://courses.cms.caltech.edu/cs179/) : GPU Programming
