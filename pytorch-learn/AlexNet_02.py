@@ -1,9 +1,7 @@
 import torch
-import torchvision
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.autograd import Variable
 
 # torch.nn is the key to define a network
 # torch.nn.functional define a lot of useful functions, such as relu, max_pool2d ..
@@ -56,13 +54,12 @@ print(len(params))
 
 # suppose we have an input image
 # instance_num, channels, size_x, size_y
-# note that mini-batches is a rule in pytorch !!
-input = Variable(torch.randn(1, 1, 32, 32))
+input = torch.randn(1, 1, 32, 32)
 output = net(input)
 
 # suppose we have the corresponding ground truth
 # note that the gt type is LongTensor :: int64
-gt = Variable(torch.arange(1, 11, out = torch.FloatTensor()))
+gt = torch.arange(1, 11, out = torch.FloatTensor())
 gt = gt.view(1,-1)
 
 criterion = nn.MSELoss()

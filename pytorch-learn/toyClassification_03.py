@@ -4,8 +4,6 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 import torchvision.transforms as transforms
-from torch.autograd import Variable
-
 
 # this time we are going to train a toy classifier for CIFAR-10 dataset
 # note that the torchvision contains some data transformers for images viz.,
