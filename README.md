@@ -41,3 +41,4 @@
 * Computer Networks [Andrew S. Tanenbaum / David J. Wetherall]
 * You Don't Know JS [Kyle Simpson]
 * JavaScript: The Good Parts [Douglas Crockford]
+* JavaScript: The Definitive Guide [David Flanagan]
