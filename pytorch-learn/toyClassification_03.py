@@ -61,7 +61,7 @@ net = Net().to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr = 0.001, momentum = 0.9)
 
-# ------------------------------------------------------------ step4: Train the data ---------------------------------------------------
+# ------------------------------------------------------------ step4: Train the data ---------------------------------------------------------
 for epoch in range(2):
     running_loss = 0.0
     for i, data in enumerate(trainloader, 0):
@@ -74,7 +74,7 @@ for epoch in range(2):
         outputs = net(inputs)
         loss = criterion(outputs, labels)
         loss.backward()
-        optimizer.step()
+        optimizer.step() # renew parameters
 
         running_loss += loss.item()
         if i % 2000 == 1999:
@@ -85,12 +85,13 @@ for epoch in range(2):
 
 correct = 0
 total = 0
-for data in testloader:
-    images, labels = data
-    outputs = net(images.to(device))
-    _, predicted = torch.max(outputs.data, 1)
-    total += labels.size(0)
-    correct += (predicted == labels.to(device)).sum().item()
+# In test phase, we don't need to compute gradients (for memory efficiency)
+with torch.no_grad():
+    for data in testloader:
+        images, labels = data
+        outputs = net(images.to(device))
+        _, predicted = torch.max(outputs.data, 1)
+        total += labels.size(0)
+        correct += (predicted == labels.to(device)).sum().item()
 
-print('Accuracy of the network on the 10000 test images: %d %%' % (
-    100 * correct / total))
+        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
