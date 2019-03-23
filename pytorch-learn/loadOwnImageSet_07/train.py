@@ -1,5 +1,4 @@
 import torch
-from torch.autograd import Variable
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
@@ -79,7 +78,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model = Net().to(device)
 print(model)
 
-optimizer = torch.optim.Adam(model.parameters())
+optimizer = torch.optim.Adam(model.parameters(), lr=0.0002)
 loss_func = torch.nn.CrossEntropyLoss()
 
 for epoch in range(10):
