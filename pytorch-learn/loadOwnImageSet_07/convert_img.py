@@ -2,15 +2,24 @@ import os
 from skimage import io
 import torchvision.datasets.mnist as mnist
 
-# first download the dataset: https://github.com/zalandoresearch/fashion-mnist
-# then make a dir named fashion_minist, the structure of this folder should be:
-# ./fashion_mnist
+# first download the MNIST dataset from: http://yann.lecun.com/exdb/mnist/
+# then make a dir named minist, the structure of this folder should be:
+# ./mnist
 #    /train-images-idx3-ubyte
 #    /train-labels-idx1-ubyte
 #    /t10k-images-idx3-ubyte
 #    /t10k-labels-idx1-ubyte
+#
+# run this file, and the train and test images are generated. Now we have a foler like this:
+# ./mnist
+#    /train/
+#    /test/
+#    /train.txt
+#    /test.txt
+#
+# we will treat these images as our own data.
 
-root="./fashion_mnist"
+root="./mnist"
 train_set = (
     mnist.read_image_file(os.path.join(root, 'train-images-idx3-ubyte')),
     mnist.read_label_file(os.path.join(root, 'train-labels-idx1-ubyte'))

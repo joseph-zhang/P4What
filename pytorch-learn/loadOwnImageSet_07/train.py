@@ -3,7 +3,7 @@ from torch.autograd import Variable
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
-root="./fashion_mnist/"
+root="./mnist/"
 
 # ---------------------------- load the dataset------------------------
 def default_loader(path):
