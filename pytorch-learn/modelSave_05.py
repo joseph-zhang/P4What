@@ -37,6 +37,8 @@ optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 # 3. torch.nn.Module.load_state_dict --> check stateDict.py
 
 # ------------------------------------------- save/load stateDict (learning params) ------------------------------
+# which is often used to save well trained model parameters.
+
 # save
 torch.save(model.state_dict(), './statedict.pth')
 
@@ -47,7 +49,7 @@ model.load_state_dict(torch.load('./statedict.pth'))
 model.eval()
 
 # ------------------------------------------- save/load entire model directly -------------------------------------
-# this method is not recommended to use
+# save entire model parameters, also save graph structure info.
 
 # save
 torch.save(model, './entire_model.pth')
@@ -57,7 +59,7 @@ new_model = torch.load('./entire_model.pth')
 model.eval()
 
 # ------------------------------------------- save/load checkpoint -----------------------------------------------
-# checkpoint is more often to be saved, for it contains not only sate_dict but also training params in optimizer.
+# checkpoint is more often to be saved, for it contains not only model sate_dict but also training params in optimizer.
 # If you want to restore training process, checkpoint file is always needed.
 # Note that is often included in iterative loop.
 torch.save({
