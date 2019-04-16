@@ -30,6 +30,8 @@
 * Ray Tracing in One Weekend [Peter Shirley]
 * Computer Graphics with OpenGL [Donald D. Hearn / M. Pauline Baker]
 * [Brown-CS1230](http://cs.brown.edu/courses/cs123/lectures.shtml) : Introduction To Computer Graphics
+* Learn OpenGL [Joey de Vries]
+* Computer Graphics - Principles and Practice [john F. hughes..]
 ---
 ### Parallel Programming
 * CUDA by Example [Jason Sanders / Edward Kandrot]
